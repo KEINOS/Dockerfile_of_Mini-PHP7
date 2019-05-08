@@ -1,6 +1,6 @@
 sut:
   build: .
-  # Run inside a container from the built image
+  # Run cURL as a test from inside container of the built image
   command: >
     echo -e "<php\necho 'Hello World!';\n" > /app/htdocs/index.php
     && apk update

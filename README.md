@@ -2,13 +2,13 @@
 
 # Dockerfile of mini-php7
 
-**Super-lightweight PHP7 Web Server container.**
+**Pretty-lightweight PHP7 Web Server container.** Useful for single task containers on docker-compose with [Nginx-proxy](https://hub.docker.com/r/jwilder/nginx-proxy).
 
 ```bash
 docker pull keinos/mini-php7:latest
 ```
 
-- Note: This is a fork of "[mini-php](https://hub.docker.com/r/sseemayer/mini-php/)" but with PHP7 and latest Alpine image.
+- Note: This is a fork of "[mini-php](https://hub.docker.com/r/sseemayer/mini-php/)" but **with PHP7 and latest Alpine** image.
 - Base image: [keinos/alpine:latest](https://hub.docker.com/r/keinos/alpine/) ([Alpine Linux](http://www.alpinelinux.org/))
   - [lighttpd](https://www.lighttpd.net/)
   - [php-fpm7](http://php-fpm.org/)
@@ -18,6 +18,7 @@ docker pull keinos/mini-php7:latest
 - Repositories:
   - Image: https://hub.docker.com/r/keinos/mini-php7 @ DockerHub
   - Source: https://github.com/KEINOS/Dockerfile_of_Mini-PHP7 @ GitHub
+- Issues: https://github.com/KEINOS/Dockerfile_of_Mini-PHP7/issues @ GitHub
 
 ## Sample Usage
 
