@@ -8,7 +8,7 @@
 docker pull keinos/mini-php7:latest
 ```
 
-- Note: This is fork of "[mini-php](https://hub.docker.com/r/sseemayer/mini-php/)" but with PHP7 and latest Alpine image.
+- Note: This is a fork of "[mini-php](https://hub.docker.com/r/sseemayer/mini-php/)" but with PHP7 and latest Alpine image.
 - Base image: [keinos/alpine:latest](https://hub.docker.com/r/keinos/alpine/) ([Alpine Linux](http://www.alpinelinux.org/))
   - [lighttpd](https://www.lighttpd.net/)
   - [php-fpm7](http://php-fpm.org/)

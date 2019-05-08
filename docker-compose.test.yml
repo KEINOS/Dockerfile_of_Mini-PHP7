@@ -1,0 +1,8 @@
+sut:
+  build: .
+  # Run inside a container from the built image
+  command: >
+    echo -e "<php\necho 'Hello World!';\n" > /app/htdocs/index.php
+    && apk update
+    && apk add curl
+    && curl http://localhost:80/
