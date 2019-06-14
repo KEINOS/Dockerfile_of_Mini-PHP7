@@ -28,9 +28,9 @@ RUN mkdir -p /app/htdocs /app/error /etc/service/lighttpd /etc/service/php-fpm \
 LABEL maintainer=https://github.com/KEINOS \
       image.url=https://hub.docker.com/r/keinos/php7-alpine \
       source.url=https://github.com/KEINOS/Dockerfile_of_PHP7-Alpine \
-      php.version="7.2.16" \
-      lighttpd.version="1.4.52" \
-      runit.version="2.1.2"
+      version.php="7.2.16" \
+      version.lighttpd="1.4.52" \
+      version.runit="2.1.2"
 
 EXPOSE $PORT
 

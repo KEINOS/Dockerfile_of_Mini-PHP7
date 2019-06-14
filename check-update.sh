@@ -50,9 +50,9 @@ mv $PATH_FILE_VER_TEMP $PATH_FILE_VER_INFO
 # Update Docker file
 echo "- Updating Dockerfile's LABEL"
 dockerfile=$(cat Dockerfile \
-  | sed "s/php.version=\"\(.*\)\"/php.version=\"${VERSION_PHP}\"/" \
-  | sed "s/lighttpd.version=\"\(.*\)\"/lighttpd.version=\"${VERSION_LIGHTTPD}\"/" \
-  | sed "s/runit.version=\"\(.*\)\"/runit.version=\"${VERSION_RUNIT}\"/"
+  | sed "s/version.php=\"\(.*\)\"/version.php=\"${VERSION_PHP}\"/" \
+  | sed "s/version.lighttpd=\"\(.*\)\"/version.lighttpd=\"${VERSION_LIGHTTPD}\"/" \
+  | sed "s/version.runit=\"\(.*\)\"/version.runit=\"${VERSION_RUNIT}\"/"
 )
 echo "${dockerfile}" > Dockerfile
 
