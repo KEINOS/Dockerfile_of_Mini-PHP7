@@ -2,7 +2,7 @@ FROM keinos/alpine:latest
 
 ARG PORT=80
 # Install dependencies
-RUN apk add --update \
+RUN apk add --no-cache \
       lighttpd \
       php7-fpm \
       runit \
@@ -25,9 +25,9 @@ RUN mkdir -p /app/htdocs /app/error /etc/service/lighttpd /etc/service/php-fpm \
     && chmod -R +x /etc/service/* \
     && ln -s /usr/sbin/php-fpm7 /usr/bin/php
 
-LABEL maintainer=https://github.com/KEINOS \
-      image.url=https://hub.docker.com/r/keinos/php7-alpine \
-      source.url=https://github.com/KEINOS/Dockerfile_of_PHP7-Alpine \
+LABEL url.maintainer=https://github.com/KEINOS/ \
+      url.image=https://hub.docker.com/r/keinos/php7-alpine \
+      url.source=https://github.com/KEINOS/Dockerfile_of_PHP7-Alpine \
       version.php="7.2.16" \
       version.lighttpd="1.4.52" \
       version.runit="2.1.2"

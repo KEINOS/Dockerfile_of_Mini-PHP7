@@ -25,6 +25,9 @@ name_image='test:test'
 docker build --no-cache -t $name_image .
 VERSION_NEW=$(docker run --rm -v $(pwd)/check-version.sh:/check-version.sh --entrypoint /check-version.sh $name_image)
 
+echo '- Dockle analysis'
+dockle --exit-code 1 $name_image
+
 echo "${VERSION_NEW}" > $PATH_FILE_VER_TEMP
 HASH_NEW=$(openssl md5 -r $PATH_FILE_VER_TEMP | awk '{ print $1 }')
 HASH_OLD=$(openssl md5 -r $PATH_FILE_VER_INFO | awk '{ print $1 }')
