@@ -28,7 +28,7 @@ RUN mkdir -p /app/htdocs /app/error /etc/service/lighttpd /etc/service/php-fpm \
 LABEL url.maintainer=https://github.com/KEINOS/ \
       url.image=https://hub.docker.com/r/keinos/php7-alpine \
       url.source=https://github.com/KEINOS/Dockerfile_of_PHP7-Alpine \
-      version.php="7.2.16" \
+      version.php="7.2.18" \
       version.lighttpd="1.4.52" \
       version.runit="2.1.2"
 
